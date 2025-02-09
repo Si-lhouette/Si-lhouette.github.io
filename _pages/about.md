@@ -6,7 +6,7 @@ subtitle: Ph.D. student at FASTLab Zhejiang University / Hybrid Robotics Group U
 
 profile:
   align: left
-  image: prof_pic.jpg
+  image: prof_pic.png
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>ymgao@zju.edu.cn</p>
