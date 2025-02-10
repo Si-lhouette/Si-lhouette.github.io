@@ -5,7 +5,7 @@
     "email": "ymgao@zju.edu.cn",
     "phone": "(+86) 13688187636",
     "url": "https://si-lhouette.github.io/",
-    "summary": ["Ph.D. student in Robotics at FASTLab, Zhejiang University",
+    "summary": ["Ph.D. student in Robotics at FASTLab, Zhejiang University \\ ",
                 "Visiting Student Scholar at Hybrid Robotics Group, UC Berkeley"
                 ],
     "location": {
@@ -47,7 +47,7 @@
       "location": "Zhejiang, China",
       "url": "https://www.zju.edu.cn/english/",
       "area": ["Control Science",
-               "\nACEE (Advanced Honor Class of Engineering Education) at Chu Kochen Honors College"
+               "\\ ACEE (Advanced Honor Class of Engineering Education) at Chu Kochen Honors College"
               ],
       "studyType": "Bachelor",
       "startDate": "2017-09",
@@ -122,16 +122,6 @@
         "Motion Planning",
         "Multi-robot System"
       ]
-    }
-  ],
-  "projects": [
-    {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
     }
   ]
 }
