@@ -7,7 +7,7 @@ first_name: Yuman
 middle_name: 
 last_name: Gao
 contact_note: >
-  <a href="http://www.clustrmaps.com/map/Si-lhouette.github.io" title="Visit tracker for Si-lhouette.github.io"><img src="//www.clustrmaps.com/map_v2.png?d=OUVLNV3y-gpZ2ym7XHFodH6mJAWJIsEwIgq48OXCqvg" /></a>
+  <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=OUVLNV3y-gpZ2ym7XHFodH6mJAWJIsEwIgq48OXCqvg"></script>
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
