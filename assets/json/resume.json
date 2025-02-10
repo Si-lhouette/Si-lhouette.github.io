@@ -5,7 +5,7 @@
     "email": "ymgao@zju.edu.cn",
     "phone": "(86) 13688187636",
     "url": "https://si-lhouette.github.io/",
-    "summary": "Ph.D. student in Robotics at FASTLab, Zhejiang University /  visiting student scholar at Hybrid Robotics Group, UC Berkeley",
+    "summary": "Ph.D. student in Robotics at FASTLab, Zhejiang University / Visiting Student Scholar at Hybrid Robotics Group, UC Berkeley",
     "location": {
       "address": "2712 Broadway St",
       "postalCode": "CA 94115",
@@ -24,7 +24,7 @@
   "education": [
     {
       "institution": "University of California, Berkeley",
-      "location": "Berkeley, California, U.S.",
+      "location": "California, U.S.",
       "url": "https://www.berkeley.edu/",
       "area": "Hybrid Robotics Group, Mechanical Engineering",
       "studyType": "Research Student Scholar",
@@ -33,7 +33,7 @@
     },
     {
       "institution": "Zhejiang University, China",
-      "location": "Hangzhou, Zhejiang, China",
+      "location": "Zhejiang, China",
       "url": "https://www.zju.edu.cn/english/",
       "area": "FASTLab, Control Science",
       "studyType": "Ph.D.",
@@ -42,10 +42,9 @@
     },
     {
       "institution": "Zhejiang University, China",
-      "location": "Hangzhou, Zhejiang, China",
+      "location": "Zhejiang, China",
       "url": "https://www.zju.edu.cn/english/",
-      "area": "Control Science",
-      "summary": "ACEE (Advanced Honor Class of Engineering Education) at Chu Kochen Honors College",
+      "area": "Control Science\\ACEE (Advanced Honor Class of Engineering Education) at Chu Kochen Honors College",
       "studyType": "Bachelor",
       "startDate": "2017-09",
       "endDate": "2021-06"
@@ -53,13 +52,12 @@
   ],
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
+      "name": "DJI",
       "position": "Planning and Control Engineer",
       "url": "https://example.com",
       "startDate": "2022-03",
       "endDate": "2023-03",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "summary": "Vehicle-mounted quadrotor project"
     }
   ],
   "awards": [
