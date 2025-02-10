@@ -46,7 +46,7 @@
       "institution": "Zhejiang University, China",
       "location": "Zhejiang, China",
       "url": "https://www.zju.edu.cn/english/",
-      "area": ["Control Science",
+      "area": ["Control Science ",
                "\\ ACEE (Advanced Honor Class of Engineering Education) at Chu Kochen Honors College"
               ],
       "studyType": "Bachelor",
@@ -56,7 +56,7 @@
   ],
   "work": [
     {
-      "name": "DJI",
+      "name": "DJI Technology Co.",
       "position": "Planning and Control Engineer",
       "url": "https://example.com",
       "startDate": "2022-03",
