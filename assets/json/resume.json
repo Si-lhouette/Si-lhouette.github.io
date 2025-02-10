@@ -44,7 +44,9 @@
       "institution": "Zhejiang University, China",
       "location": "Zhejiang, China",
       "url": "https://www.zju.edu.cn/english/",
-      "area": "Control Science\nACEE (Advanced Honor Class of Engineering Education) at Chu Kochen Honors College",
+      "area": ["Control Science",
+               "ACEE (Advanced Honor Class of Engineering Education) at Chu Kochen Honors College"
+              ],
       "studyType": "Bachelor",
       "startDate": "2017-09",
       "endDate": "2021-06"
