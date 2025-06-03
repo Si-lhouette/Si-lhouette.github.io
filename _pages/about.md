@@ -32,3 +32,5 @@ I received my Bachelor's Degree at Control Sciense College, Zhejiang University,
 
 My primary interest of research lie in Motion Planning, Multi-agent System, Reinforcement Learning. 
 <!-- With a strong enthusiasm for exploring various aspects of robotics, I have conducted research on multiple robotic platforms, including quadrotors, wheeled robots, humanoid robots, quadrupedal robots, and flapping-wing robots. -->
+
+Further information is available on my [Google Scholar](https://scholar.google.com/citations?user=nepkga0AAAAJ&hl=en) page.
