@@ -25,7 +25,7 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
-I am a fourth-year Ph.D. student in Robotics at [FASTLab](http://zju-fast.com/), Zhejiang University, advised by [Prof. Fei Gao](http://zju-fast.com/research-group/fei-gao/) and [Prof. Chao Xu](http://zju-fast.com/research-group/chao-xu/). I am also a visiting student scholar at [Hybrid Robotics Group](https://hybrid-robotics.berkeley.edu/index.html), UC Berkeley, advised by [Prof. Koushil Sreenath](https://hybrid-robotics.berkeley.edu/koushil/). 
+I am a fifth-year Ph.D. student in Robotics at [FASTLab](http://zju-fast.com/), Zhejiang University, advised by [Prof. Fei Gao](http://zju-fast.com/research-group/fei-gao/) and [Prof. Chao Xu](http://zju-fast.com/research-group/chao-xu/). I am also a visiting student scholar at [Hybrid Robotics Group](https://hybrid-robotics.berkeley.edu/index.html) and [Berkeley Artificial Intelligence Research Lab (BAIR)](https://bair.berkeley.edu/), UC Berkeley, advised by [Prof. Koushil Sreenath](https://hybrid-robotics.berkeley.edu/koushil/). 
 
 <!-- Additionally, I have a one-year internship in the Planning and Control Group at [DJI Technology Co.](https://www.dji.com/). Before that,  -->
 I received my Bachelor's degree in 2021 from the College of Control Science and Engineering, Zhejiang University, and was concurrently a member of the ACEE (Advanced Honor Class of Engineering Education) at Chu Kochen Honors College.
