@@ -25,6 +25,16 @@
           <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
         {% endif %}
       {% endif %}
+      {% if entry.journal_logo %}
+        {% assign journal_logo_path = entry.journal_logo | prepend: '/assets/img/publication_preview/' | relative_url %}
+        {% assign journal_logo_class = 'journal-logo' %}
+        {% if entry.journal_logo contains 'sr_logo' %}
+          {% assign journal_logo_class = journal_logo_class | append: ' journal-logo--sr' %}
+        {% elsif entry.journal_logo contains 'tro_logo' %}
+          {% assign journal_logo_class = journal_logo_class | append: ' journal-logo--tro' %}
+        {% endif %}
+        <img class="{{ journal_logo_class }}" src="{{ journal_logo_path }}" alt="{{ entry.journal }}">
+      {% endif %}
       {% if entry.preview %}
         {% if entry.preview contains '://' %}
           <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">

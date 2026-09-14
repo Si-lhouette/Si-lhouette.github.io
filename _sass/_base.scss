@@ -729,10 +729,34 @@ footer.sticky-bottom {
     li {
       margin-bottom: 1rem;
 
+      &:has(.journal-logo) {
+        margin-top: 1.5rem;
+      }
+
       .preview {
       }
 
+      .journal-logo {
+        position: absolute;
+        left: 15px;
+        transform: translateY(calc(-100% - 0.4rem));
+        max-width: 140px;
+        width: 35%;
+        height: auto;
+      }
+
+      .journal-logo--sr {
+        max-width: 168px;
+        width: 42%;
+      }
+
+      .journal-logo--tro {
+        max-width: 280px;
+        width: 70%;
+      }
+
       .abbr {
+        position: relative;
         margin-bottom: 0.5rem;
 
         abbr {
@@ -868,6 +892,10 @@ footer.sticky-bottom {
       border-color: var(--global-highlight-color);
     }
   }
+}
+
+.selected-publications-heading {
+  margin-top: 3rem;
 }
 
 // Rouge Color Customization

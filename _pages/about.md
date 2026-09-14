@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Ph.D. student at FASTLab Zhejiang University / Hybrid Robotics Group UC Berkeley
+subtitle: Ph.D. from FASTLab <strong>Zhejiang University</strong> / Hybrid Robotics Group <strong>UC Berkeley</strong>
 
 profile:
   align: left
