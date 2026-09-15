@@ -730,7 +730,11 @@ footer.sticky-bottom {
       margin-bottom: 1rem;
 
       &:has(.journal-logo) {
-        margin-top: 1.5rem;
+        margin-top: 2.5rem;
+
+        @media (max-width: 575.98px) {
+          margin-top: 3.5rem;
+        }
       }
 
       .preview {
