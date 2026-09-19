@@ -1,0 +1,177 @@
+// Research areas (grouped on the about page)
+
+.research-areas {
+  margin-top: 1rem;
+}
+
+.research-areas-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+
+  .research-areas-nav-pill {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.9rem;
+    border-radius: 999px;
+    border: 1px solid var(--global-divider-color);
+    color: var(--global-text-color-light);
+    white-space: nowrap;
+
+    &:hover {
+      color: var(--global-theme-color);
+      border-color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
+}
+
+// Top row: Legged Robot RL column paired with Motion Planning + Multi-Robot System.
+// align-items: stretch makes both columns (and their single card) exactly the same height.
+.research-areas-top {
+  display: flex;
+  gap: 1.5rem;
+  align-items: stretch;
+  margin-bottom: 1.5rem;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+}
+
+.research-areas-col {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+
+  > .research-area {
+    flex: 1 1 auto;
+  }
+}
+
+// Direct children of .research-areas are the full-width sections
+// (Exploration, Other Collaborations); the top two columns use flex gap instead.
+.research-areas > .research-area {
+  margin-bottom: 1.5rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.research-area {
+  min-width: 0;
+  padding: 1.5rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.75rem;
+  background-color: var(--global-card-bg-color);
+  scroll-margin-top: 5rem;
+
+  .research-area-divider {
+    border: none;
+    border-top: 1px solid var(--global-divider-color);
+    margin: 1.75rem 0;
+  }
+
+  .research-area-title {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--global-text-color);
+  }
+
+  .research-area-meta {
+    margin-top: 0.35rem;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: var(--global-text-color-light);
+  }
+
+  .research-area-papers {
+    margin-top: 1.25rem;
+
+    // Stack thumbnail above text: papers read as compact cards, not full-width rows
+    &.publications ol.bibliography {
+      margin-top: 0;
+
+      li {
+        margin-bottom: 1.25rem;
+        padding-bottom: 1.25rem;
+        border-bottom: 1px dashed var(--global-divider-color);
+
+        &:last-child {
+          margin-bottom: 0;
+          padding-bottom: 0;
+          border-bottom: none;
+        }
+
+        .row {
+          display: flex;
+          flex-direction: column;
+
+          > div {
+            width: 100%;
+            max-width: 100% !important;
+            flex: 0 0 100% !important;
+          }
+        }
+
+        .preview,
+        img.preview {
+          width: 100%;
+        }
+
+        .title {
+          font-size: 0.95rem;
+        }
+
+        .author,
+        .periodical {
+          font-size: 0.85rem;
+        }
+      }
+    }
+
+    // Full-width sections (Exploration, Other Works): lay papers out side by side,
+    // auto-fit so Exploration's 2 papers get 2 columns and Other Works' 5 get 3
+    &.research-area-papers--grid.publications {
+      // The default 1.25rem is meant to clear the "selected publications" heading
+      // above; here the meta line is already right above, so keep this tight and
+      // let the logo reservation below (when needed) supply the real spacing.
+      margin-top: 0.5rem;
+
+      ol.bibliography {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        align-items: start;
+        gap: 0 2rem;
+
+        li {
+          border-bottom: none;
+        }
+
+        // The journal logo (when present) floats above the thumbnail via absolute
+        // positioning, reserved for by this margin-top. Only reserve it when this
+        // list actually has a logo somewhere, and then apply it to every entry
+        // (not just the ones with a logo) so a row's thumbnails all start at the
+        // same height; sized to the logo's own height, not the single-column
+        // list's larger 2.5rem (which also clears the *previous* list entry).
+        &:has(.journal-logo) li {
+          margin-top: 1.75rem;
+
+          @media (max-width: 575.98px) {
+            margin-top: 2.25rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.research-areas-more {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+  text-align: right;
+}

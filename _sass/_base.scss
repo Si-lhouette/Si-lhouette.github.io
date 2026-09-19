@@ -194,6 +194,9 @@ ul.task-list input[type="checkbox"] {
 
 .profile {
   width: 100%;
+  // Nudge down slightly so the photo's top edge lines up with the cap-height
+  // of the adjacent text's first line, not its taller line-box top.
+  margin-top: 0.5rem;
 
   .more-info {
     margin-bottom: 5px;

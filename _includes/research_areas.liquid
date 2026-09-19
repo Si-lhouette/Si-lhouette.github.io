@@ -1,0 +1,42 @@
+{% comment %}
+Layout: [Legged Robot RL] column paired with [Motion Planning + Multi-Robot System]
+combined into a single card so both columns carry the same card overhead and stay
+the same length (4 papers each side). Exploration and Other Collaborations follow
+below as full-width rows with their papers side by side.
+{% endcomment %}
+{% assign areas = site.data.research_areas %}
+{% assign rl_legged = areas | where: "key", "rl_legged" | first %}
+{% assign planning = areas | where: "key", "planning" | first %}
+{% assign multi_robot = areas | where: "key", "multi_robot" | first %}
+{% assign exploration = areas | where: "key", "exploration" | first %}
+{% assign other = areas | where: "key", "other" | first %}
+
+<div class="research-areas">
+  <div class="research-areas-nav">
+    {% for area in areas %}
+      <a href="#area-{{ area.key }}" class="research-areas-nav-pill">{{ area.title }}</a>
+    {% endfor %}
+  </div>
+
+  <div class="research-areas-top">
+    <div class="research-areas-col">
+      <div class="research-area">
+        {% include research_area_card.liquid area=rl_legged %}
+      </div>
+    </div>
+    <div class="research-areas-col">
+      <div class="research-area">
+        {% include research_area_card.liquid area=planning %}
+        <hr class="research-area-divider">
+        {% include research_area_card.liquid area=multi_robot %}
+      </div>
+    </div>
+  </div>
+
+  <div class="research-area">
+    {% include research_area_card.liquid area=exploration papers_layout="grid" %}
+  </div>
+  <div class="research-area">
+    {% include research_area_card.liquid area=other papers_layout="grid" %}
+  </div>
+</div>

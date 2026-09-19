@@ -1,0 +1,24 @@
+- key: rl_legged
+  title: Reinforcement Learning on Legged Robots
+  affiliation: UC Berkeley
+  advisors: Prof. Koushil Sreenath, Prof. Yi Wu, Prof. Zhongyu Li
+
+- key: planning
+  title: Motion Planning & Trajectory Optimization
+  affiliation: Zhejiang University
+  advisors: Prof. Fei Gao, Prof. Shaojie Shen
+
+- key: multi_robot
+  title: Multi-Robot System
+  affiliation: Zhejiang University
+  advisors: Prof. Fei Gao
+
+- key: exploration
+  title: Autonomous Exploration & Active Reconstruction
+  affiliation: Zhejiang University
+  advisors: Prof. Fei Gao
+
+- key: other
+  title: Other Works
+  affiliation: Zhejiang University
+  advisors: Prof. Fei Gao

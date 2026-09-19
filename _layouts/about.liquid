@@ -56,6 +56,15 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
+    <!-- Research areas -->
+    {% if page.research_areas %}
+      <h2 class="selected-publications-heading">Research</h2>
+      {% include research_areas.liquid %}
+      <p class="research-areas-more">
+        See the full list on my <a href="{{ '/publications/' | relative_url }}">publications</a> page.
+      </p>
+    {% endif %}
+
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2 class="selected-publications-heading">

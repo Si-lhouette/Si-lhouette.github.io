@@ -1,0 +1,10 @@
+<div class="research-area-section" id="area-{{ include.area.key }}">
+  <h3 class="research-area-title">{{ include.area.title }}</h3>
+  <div class="research-area-meta">
+    {{ include.area.affiliation }}{% if include.area.advisors %} &middot; {{ include.area.advisors }}{% endif %}
+  </div>
+
+  <div class="publications research-area-papers{% if include.papers_layout == 'grid' %} research-area-papers--grid{% endif %}">
+    {% bibliography --group_by none --query @*[area={{ include.area.key }}]* %}
+  </div>
+</div>

@@ -12,7 +12,8 @@ profile:
     <p>ymgao@zju.edu.cn</p>
     <p>ymgao@berkeley.edu</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
+research_areas: true # groups selected work into four research areas
 social: true # includes social icons at the bottom of the page
 
 announcements:
@@ -30,7 +31,7 @@ I am a Research Scientist at [Sharpa Robotics](https://www.sharpa.com/) in Singa
 <!-- Additionally, I have a one-year internship in the Planning and Control Group at [DJI Technology Co.](https://www.dji.com/). Before that,  -->
 I received my Bachelor's degree in 2021 from the College of Control Science and Engineering, Zhejiang University, and was concurrently a member of the ACEE (Advanced Honor Class of Engineering Education) at Chu Kochen Honors College.
 
-My primary research interests lie in Motion Planning, Multi-agent System, Reinforcement Learning. 
+My primary research interests lie in Reinforcement Learning, Motion Planning, Multi-agent System. 
 <!-- With a strong enthusiasm for exploring various aspects of robotics, I have conducted research on multiple robotic platforms, including quadrotors, wheeled robots, humanoid robots, quadrupedal robots, and flapping-wing robots. -->
 
 Further information is available on my [Google Scholar](https://scholar.google.com/citations?user=nepkga0AAAAJ&hl=en) page, and my full CV can be found [here](/assets/pdf/GaoYuman_CV_with_translation.pdf).
