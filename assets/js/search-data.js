@@ -439,6 +439,13 @@ ninja.data = [{
           window.open("mailto:%79%6D%67%61%6F@%7A%6A%75.%65%64%75.%63%6E", "_blank");
         },
       },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/yuman-gao-0662482a6", "_blank");
+        },
+      },{
         id: 'social-scholar',
         title: 'Google Scholar',
         section: 'Socials',
@@ -448,6 +455,13 @@ ninja.data = [{
       },{
         id: 'social-custom_social',
         title: 'Custom_social',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://si-lhouette.github.io/", "_blank");
+        },
+      },{
+        id: 'social-custom_social2',
+        title: 'Custom_social2',
         section: 'Socials',
         handler: () => {
           window.open("https://si-lhouette.github.io/", "_blank");
