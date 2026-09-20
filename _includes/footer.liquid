@@ -11,6 +11,14 @@
       {% if site.last_updated %}
         Last updated: {{ 'now' | date: '%B %d, %Y' }}.
       {% endif %}
+      {% if site.enable_visitor_map %}
+        <img
+          id="visitor-map-trigger"
+          src="{{ '/assets/img/cat.jpg' | relative_url }}"
+          alt=""
+          title="?"
+        >
+      {% endif %}
     </div>
   </footer>
 {% else %}
@@ -30,6 +38,32 @@
       {% if site.last_updated %}
         Last updated: {{ 'now' | date: '%B %d, %Y' }}.
       {% endif %}
+      {% if site.enable_visitor_map %}
+        <img
+          id="visitor-map-trigger"
+          src="{{ '/assets/img/cat.jpg' | relative_url }}"
+          alt=""
+          title="?"
+        >
+      {% endif %}
     </div>
   </footer>
+{% endif %}
+
+{% if site.enable_visitor_map %}
+  <div id="visitor-map-modal" class="visitor-map-modal" aria-hidden="true">
+    <div class="visitor-map-modal-backdrop" data-visitor-map-close></div>
+    <div class="visitor-map-modal-content">
+      <button type="button" class="visitor-map-modal-close" data-visitor-map-close aria-label="Close">&times;</button>
+      <div id="visitor-map-caption" class="visitor-map-caption">Loading visitors&hellip;</div>
+      <div class="visitor-map-stage">
+        <img id="visitor-map-bg" class="visitor-map-bg" alt="" data-src="{{ '/assets/img/world-map.png' | relative_url }}">
+        <svg id="visitor-map-dots" class="visitor-map-dots" viewBox="0 0 360 180" xmlns="http://www.w3.org/2000/svg"></svg>
+      </div>
+      <ol id="visitor-map-countries" class="visitor-map-countries"></ol>
+      <div class="visitor-map-credit">
+        Map: <a href="https://commons.wikimedia.org/wiki/File:World_location_map_(equirectangular_180).svg" target="_blank" rel="noopener">Wikimedia Commons</a> (CC BY-SA 3.0)
+      </div>
+    </div>
+  </div>
 {% endif %}

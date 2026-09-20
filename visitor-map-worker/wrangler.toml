@@ -1,0 +1,12 @@
+name = "visitor-map"
+main = "src/index.js"
+compatibility_date = "2026-09-20"
+
+[[kv_namespaces]]
+binding = "VISITS"
+id = "86843f45d2fe4c59be9ec515c17450bd"
+
+# Restrict beacon requests to your site's origin(s). Comma-separated; "*" allows any.
+# localhost:8080 is included for local `docker compose up` testing.
+[vars]
+ALLOWED_ORIGIN = "https://si-lhouette.github.io,http://localhost:8080"

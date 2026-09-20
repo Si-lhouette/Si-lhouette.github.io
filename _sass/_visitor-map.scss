@@ -1,0 +1,151 @@
+#visitor-map-trigger {
+  width: 22px;
+  height: 22px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  opacity: 0.55;
+  vertical-align: middle;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+}
+
+.visitor-map-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+
+  &.is-open {
+    display: block;
+  }
+}
+
+.visitor-map-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.visitor-map-modal-content {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  max-height: 88vh;
+  overflow-y: auto;
+  margin: 6vh auto;
+  padding: 1.25rem;
+  background: var(--global-bg-color);
+  color: var(--global-text-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+}
+
+.visitor-map-modal-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  background: none;
+  border: none;
+  font-size: 1.75rem;
+  line-height: 1;
+  color: var(--global-text-color);
+  cursor: pointer;
+}
+
+.visitor-map-caption {
+  text-align: center;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--global-text-color);
+}
+
+// Equirectangular map: the image spans lon -180..180 / lat -90..90, so the
+// SVG overlay's 360x180 viewBox maps 1 unit to 1 degree and the two line up
+// as long as the stage keeps a 2:1 aspect ratio.
+.visitor-map-stage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  border-radius: 0.375rem;
+  overflow: hidden;
+  background: #b9d8ee;
+}
+
+.visitor-map-bg,
+.visitor-map-dots {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.visitor-map-dots circle {
+  fill: #e63946;
+  fill-opacity: 0.65;
+  stroke: #ffffff;
+  stroke-width: 0.3;
+}
+
+html[data-theme="dark"] .visitor-map-bg {
+  filter: brightness(0.7) saturate(0.85);
+}
+
+.visitor-map-countries {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  font-size: 0.9rem;
+
+  li {
+    display: grid;
+    grid-template-columns: minmax(0, 11rem) 1fr 3rem;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.2rem 0;
+  }
+}
+
+.visitor-map-country-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.visitor-map-country-bar {
+  display: block;
+  height: 0.5rem;
+  border-radius: 0.25rem;
+  background: var(--global-divider-color);
+  overflow: hidden;
+
+  span {
+    display: block;
+    height: 100%;
+    background: var(--global-theme-color);
+  }
+}
+
+.visitor-map-country-count {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  color: var(--global-text-color-light);
+}
+
+.visitor-map-credit {
+  margin-top: 0.75rem;
+  font-size: 0.7rem;
+  text-align: right;
+  color: var(--global-text-color-light);
+
+  a {
+    color: inherit;
+  }
+}

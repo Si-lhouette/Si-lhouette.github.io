@@ -7,14 +7,6 @@ first_name: Yuman
 middle_name: 
 last_name: Gao
 contact_note: >
-  <div style="display: none;">
-    <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=OUVLNV3y-gpZ2ym7XHFodH6mJAWJIsEwIgq48OXCqvg"></script>
-  </div>
-# <div style="text-align: center;">
-#     <div style="display: inline-block; width: 200px; height: 200px; overflow: hidden;">
-#         <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=OUVLNV3y-gpZ2ym7XHFodH6mJAWJIsEwIgq48OXCqvg"></script>
-#     </div>
-# </div>
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
@@ -85,6 +77,8 @@ google_analytics: # your Google Analytics measurement ID (format: G-XXXXXXXXXX)
 cronitor_analytics: # cronitor RUM analytics site ID (format: XXXXXXXXX)
 pirsch_analytics: # your Pirsch analytics site ID (length 32 characters)
 openpanel_analytics: # your Openpanel analytics client ID (format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX)
+goatcounter_analytics: # your GoatCounter site code, i.e. the XXXX in https://XXXX.goatcounter.com (sign up at https://www.goatcounter.com/)
+visitor_map_api: https://visitor-map.michael-gaoym.workers.dev
 
 # For Google Search Console, see https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag
 google_site_verification: # your google-site-verification ID (Google Search Console)
@@ -200,6 +194,7 @@ exclude:
   - readme_preview/
   - vendor
   - _pages/blog.md
+  - visitor-map-worker/
   - _pages/repositories.md
   - _pages/teaching.md
   - _pages/profiles.md
@@ -394,6 +389,8 @@ enable_google_analytics: false # enables google analytics
 enable_cronitor_analytics: false # enables cronitor RUM analytics
 enable_pirsch_analytics: false # enables Pirsch analytics (https://pirsch.io/)
 enable_openpanel_analytics: false # enables Openpanel analytics (https://openpanel.dev/)
+enable_goatcounter_analytics: false # enables GoatCounter analytics (https://www.goatcounter.com/)
+enable_visitor_map: true # enables the click-to-reveal visitor geo map (cat.jpg easter egg in the footer)
 enable_google_verification: false # enables google site verification
 enable_bing_verification: false # enables bing site verification
 enable_masonry: true # enables automatic project cards arrangement
