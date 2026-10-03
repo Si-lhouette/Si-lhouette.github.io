@@ -15,6 +15,14 @@
     fetch(apiUrl("/track"), { mode: "cors" }).catch(() => {});
   }
 
+  // Taiwan, Hong Kong and Macau are counted as part of China.
+  const COUNTRY_ALIASES = { TW: "CN", HK: "CN", MO: "CN" };
+
+  function normalizeCountry(code) {
+    const c = (code || "??").toUpperCase();
+    return COUNTRY_ALIASES[c] || c;
+  }
+
   const regionNames = (() => {
     try {
       return new Intl.DisplayNames(["en"], { type: "region" });
@@ -91,14 +99,16 @@
         c.setAttribute("cy", (90 - p.lat).toFixed(2));
         c.setAttribute("r", Math.min(1.2 + Math.log2(p.count + 1) * 0.8, 5).toFixed(2));
         const t = document.createElementNS(svgNS, "title");
-        t.textContent = p.city + ", " + countryName(p.country) + ": " + p.count;
+        t.textContent =
+          p.city + ", " + countryName(normalizeCountry(p.country)) + ": " + p.count;
         c.appendChild(t);
         dots.appendChild(c);
       });
 
       const byCountry = {};
       points.forEach((p) => {
-        byCountry[p.country] = (byCountry[p.country] || 0) + p.count;
+        const code = normalizeCountry(p.country);
+        byCountry[code] = (byCountry[code] || 0) + p.count;
       });
       const ranked = Object.entries(byCountry).sort((a, b) => b[1] - a[1]);
       const max = ranked.length ? ranked[0][1] : 1;

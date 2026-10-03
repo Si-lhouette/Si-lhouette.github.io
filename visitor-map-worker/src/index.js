@@ -1,5 +1,13 @@
 const DATA_KEY = "geo_visits";
 
+// Taiwan, Hong Kong and Macau are recorded as part of China.
+const COUNTRY_ALIASES = { TW: "CN", HK: "CN", MO: "CN" };
+
+function normalizeCountry(code) {
+  const c = (code || "??").toUpperCase();
+  return COUNTRY_ALIASES[c] || c;
+}
+
 function corsHeaders(request, env) {
   const origin = request.headers.get("Origin") || "";
   const allowList = (env.ALLOWED_ORIGIN || "*")
@@ -41,7 +49,7 @@ export default {
       const lat = typeof cf.latitude !== "undefined" ? parseFloat(cf.latitude) : null;
       const lon = typeof cf.longitude !== "undefined" ? parseFloat(cf.longitude) : null;
       const city = cf.city || "Unknown";
-      const country = cf.country || "??";
+      const country = normalizeCountry(cf.country);
 
       if (lat !== null && lon !== null && !Number.isNaN(lat) && !Number.isNaN(lon)) {
         const key = city + "|" + country;
